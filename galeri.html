@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeri Pesantren Modern Al-Hikmah - Dokumentasi kegiatan dan fasilitas pesantren">
+    <title>Galeri | Pesantren Modern Al-Hikmah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="assets/logo.png" alt="Logo Pesantren" class="nav-logo">
+                <div class="brand-text">
+                    <h1>Al-Hikmah</h1>
+                    <span>Pesantren Modern</span>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Beranda</a></li>
+                <li class="nav-item"><a href="profil.html" class="nav-link">Profil</a></li>
+                <li class="nav-item"><a href="program.html" class="nav-link">Program</a></li>
+                <li class="nav-item"><a href="galeri.html" class="nav-link active">Galeri</a></li>
+                <li class="nav-item"><a href="ppdb.html" class="nav-link">PPDB</a></li>
+                <li class="nav-item"><a href="kontak.html" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-overlay"></div>
+        <div class="container">
+            <h1>Galeri Pesantren</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Beranda</a>
+                <span>/</span>
+                <span>Galeri</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Section -->
+    <section class="section galeri-page" id="galeri-page">
+        <div class="container">
+            <div class="galeri-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+                <button class="filter-btn" data-filter="fasilitas">Fasilitas</button>
+                <button class="filter-btn" data-filter="prestasi">Prestasi</button>
+            </div>
+            <div class="galeri-masonry" id="galeriMasonry">
+                <!-- Kegiatan -->
+                <div class="galeri-item" data-category="kegiatan">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-quran"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Kegiatan Tahfidz</h3>
+                                <p>Setoran hafalan Al-Qur'an santri</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="fasilitas">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Masjid Pesantren</h3>
+                                <p>Masjid utama pesantren</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="kegiatan">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Praktikum Sains</h3>
+                                <p>Kegiatan laboratorium IPA</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="prestasi">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Juara MTQ</h3>
+                                <p>Prestasi MTQ tingkat nasional</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="fasilitas">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Perpustakaan</h3>
+                                <p>Perpustakaan modern pesantren</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="kegiatan">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-futbol"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Olahraga</h3>
+                                <p>Kegiatan olahraga santri</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="prestasi">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Olimpiade Sains</h3>
+                                <p>Prestasi olimpiade sains</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="fasilitas">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Lab Komputer</h3>
+                                <p>Laboratorium komputer</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="kegiatan">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Upacara</h3>
+                                <p>Upacara bendera santri</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="fasilitas">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Asrama</h3>
+                                <p>Asrama santri</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="prestasi">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Prestasi Bahasa</h3>
+                                <p>Juara lomba debat bahasa</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="galeri-item" data-category="kegiatan">
+                    <div class="galeri-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <div class="galeri-overlay">
+                            <div class="galeri-info">
+                                <h3>Kaligrafi</h3>
+                                <p>Kegiatan seni kaligrafi</p>
+                                <button class="galeri-zoom" onclick="openLightbox(this)">
+                                    <i class="fas fa-search-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-image">
+                <div class="image-placeholder lightbox-placeholder">
+                    <i class="fas fa-image"></i>
+                </div>
+            </div>
+            <div class="lightbox-caption">
+                <h3 id="lightboxTitle">Judul Gambar</h3>
+                <p id="lightboxDesc">Deskripsi gambar</p>
+            </div>
+            <button class="lightbox-prev" onclick="changeImage(-1)">&#10094;</button>
+            <button class="lightbox-next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-brand">
+                        <img src="assets/logo.png" alt="Logo" class="footer-logo">
+                        <h3>Al-Hikmah</h3>
+                    </div>
+                    <p>Pesantren Modern Al-Hikmah berkomitmen mencetak generasi Qur'ani yang unggul dalam iman, ilmu, dan akhlak.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu Cepat</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="profil.html">Profil</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="galeri.html">Galeri</a></li>
+                        <li><a href="ppdb.html">PPDB</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Program</h4>
+                    <ul>
+                        <li><a href="program.html">Tahfidz Al-Qur'an</a></li>
+                        <li><a href="program.html">Bahasa Arab</a></li>
+                        <li><a href="program.html">Bahasa Inggris</a></li>
+                        <li><a href="program.html">Sains & Teknologi</a></li>
+                        <li><a href="program.html">Ekstrakurikuler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-kontak">
+                    <h4>Kontak Kami</h4>
+                    <div class="kontak-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jl. Pesantren No. 123, Kecamatan Cileungsi, Kabupaten Bogor, Jawa Barat 16820</span>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@pesantrenalhikmah.sch.id</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pesantren Modern Al-Hikmah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

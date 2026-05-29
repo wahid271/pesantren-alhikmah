@@ -1,0 +1,413 @@
+/* ============================================
+   RESPONSIVE CSS - PESANTREN MODERN AL-HIKMAH
+   ============================================ */
+
+/* Large Desktop (1200px and up) */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+/* Desktop (992px - 1199px) */
+@media screen and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2.2rem; }
+    
+    .hero-title { font-size: 3.5rem; }
+    
+    .sambutan-content {
+        gap: 40px;
+    }
+    
+    .pengasuh-card {
+        grid-template-columns: 350px 1fr;
+        gap: 30px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media screen and (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.5rem; }
+    
+    .section {
+        padding: 70px 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Navbar */
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 300px;
+        height: 100vh;
+        background: var(--white);
+        flex-direction: column;
+        padding: 100px 30px 30px;
+        gap: 5px;
+        box-shadow: var(--shadow-xl);
+        transition: right var(--transition-medium);
+        overflow-y: auto;
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-link {
+        padding: 12px 15px;
+        font-size: 1rem;
+    }
+    
+    /* Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Sambutan */
+    .sambutan-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .sambutan-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Keunggulan */
+    .keunggulan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Program */
+    .program-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Statistik */
+    .statistik-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    
+    /* Galeri */
+    .galeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Profil Page */
+    .sejarah-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .visi-misi-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .pengasuh-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .pengasuh-kontak {
+        justify-content: center;
+    }
+    
+    .struktur-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Program Page */
+    .program-detail-content,
+    .program-detail-content.reverse {
+        grid-template-columns: 1fr;
+        direction: ltr;
+    }
+    
+    .ekstra-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Galeri Page */
+    .galeri-masonry {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* PPDB Page */
+    .ppdb-info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .persyaratan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Kontak Page */
+    .kontak-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.8rem; }
+    h3 { font-size: 1.3rem; }
+    
+    .section {
+        padding: 50px 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    /* Hero */
+    .hero {
+        min-height: 500px;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+    }
+    
+    /* Keunggulan */
+    .keunggulan-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Program */
+    .program-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    /* Statistik */
+    .statistik-number {
+        font-size: 2.8rem;
+    }
+    
+    /* Galeri Preview */
+    .galeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .galeri-item {
+        height: 200px;
+    }
+    
+    /* CTA */
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    /* Page Header */
+    .page-header {
+        padding: 100px 0 50px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* PPDB Page */
+    .ppdb-info-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .persyaratan-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    
+    /* Alur */
+    .alur-timeline::before {
+        left: 25px;
+    }
+    
+    .alur-item {
+        gap: 20px;
+    }
+    
+    .alur-icon {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+    }
+    
+    .alur-icon i {
+        font-size: 1.2rem;
+    }
+    
+    /* Kontak */
+    .kontak-social-links {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .kontak-form-container {
+        padding: 25px;
+    }
+    
+    /* Lightbox */
+    .lightbox-prev { left: 10px; }
+    .lightbox-next { right: 10px; }
+    
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Back to Top */
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile (480px and down) */
+@media screen and (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.6rem; }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    /* Galeri Page */
+    .galeri-masonry {
+        grid-template-columns: 1fr;
+    }
+    
+    .galeri-filter {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+    
+    /* Ekstrakurikuler */
+    .ekstra-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    /* Struktur */
+    .struktur-card {
+        min-width: 100%;
+    }
+    
+    /* Form */
+    .form-control {
+        padding: 10px 14px;
+    }
+    
+    /* Lightbox */
+    .lightbox-prev, .lightbox-next {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .lightbox-prev { left: 5px; }
+    .lightbox-next { right: 5px; }
+}
+
+/* Small Mobile (360px and down) */
+@media screen and (max-width: 360px) {
+    .nav-logo {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .brand-text h1 {
+        font-size: 1.2rem;
+    }
+    
+    .brand-text span {
+        font-size: 0.65rem;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .statistik-number {
+        font-size: 2.2rem;
+    }
+    
+    .statistik-label {
+        font-size: 0.9rem;
+    }
+}
